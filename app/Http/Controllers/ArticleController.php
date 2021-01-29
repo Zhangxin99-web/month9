@@ -55,7 +55,7 @@ class ArticleController extends Controller
     }
 
     //删除数据
-    public function del($id)
+    public function del($id) 
     {
         Article::where("id",$id)->delete();
         return redirect("show")."<script>confirm('确定要删除吗?')</script>";
